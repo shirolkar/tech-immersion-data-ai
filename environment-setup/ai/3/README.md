@@ -11,3 +11,4 @@ Complete the steps below to prepare the environment for the [AI, Experience 3](.
 - Within the workspace, need a pre-created machine learning compute named: `gpucluster`, Standard_DS3_v2, min nodes = 1 and max nodes = 1
 - The AML cluster is created within the notebook, which requires 4 nodes, STANDARD_D12_V2
 - An ACI instance is created within the notebook, which requires cpu_cores=1, and memory_gb=1
+- Users will create a Notebook VM in the workspace of VM size: STANDARD_D3_V2
