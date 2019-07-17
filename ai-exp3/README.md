@@ -106,49 +106,53 @@ In this exercise, you will create a model that predicts battery failure from tim
 
 ## Exercise 2: Understanding the automated ML generated model using model explainability
 
-### Task 1: Create the Azure Notebooks project
+### Task 1: Create the Notebook VM
 
-To complete this task, you will use an Azure Notebook and Azure Machine Learning.
+To complete this task, you will use an Notebook VM and Azure Machine Learning.
 
-If you have not already created the `connected-car` project in Azure Notebooks follow these steps. If you already have this project in your environment, continue with the **Task 2**.
+1. Navigate to your Azure Machine Learning workspace in the Azure Portal.
+2. Select `Notebook VMs` in the left navigation bar.
+3. Select **+ New**.
 
-1. To start, open a new web browser window and navigate to <https://notebooks.azure.com>.
+  ![Select the button New in the Notebook VMs section.](media/01s.png '+ New')
+  
+4. Provide the following values and select **Create**:
 
-2. Select **Sign In** and then use your Microsoft Account to complete the sign in process.
+    - Name: **ti-nb**
+    - Virtual machine size: **STANDARD_D3_V2**
 
-   ![The Sign In button](media/01.png 'Sign In')
+  ![New Notebook VM Dialog shows values for Name and Virtual machine size.](media/02s.png 'New Notebook VM Dialog')
+  
+5. Wait for the Notebook VM to be in **Running** status. This can take around 3-5 minutes.
 
-3. Dismiss the dialog to create the user ID (you will not need this). Within the Microsoft Azure Notebooks portal, select **My Projects** from the menu at the top.
+### Task 2: Upload the notebooks
 
-   ![The My Projects button](media/02.png 'My Projects')
+1. Launch the **Jupyter Notebooks** interface by selecting as shown.
 
-4. Then select **New Project**.
+  ![The image highlights the area to select to launch the Jupyter notebooks interface.](media/03s.png 'Launch Jupyter Notebooks')
 
-   ![The New Project button](media/03.png 'New Project')
+2. From Jupyter Notebooks interface select **New, Terminal**
 
-5. On the Create New Project dialog, provide a Project Name (this should be a user friendly description) and Project ID (this will form a part of the URL used to access this project in the browser) and uncheck Public. Select **Create**.
+  ![The image shows how to launch a new terminal from Jupyter Notebooks interface.](media/04s.png 'New Terminal')
 
-   ![The Create New Project dialog](media/04.png 'Create New Project')
+3. In the new terminal run the following command in order:
 
-### Task 2: Upload the starter notebook
+    - **mkdir tech-immersion**
+    - **cd tech-immersion**
+    - **git init**
+    - **git remote add origin https://github.com/solliancenet/tech-immersion-data-ai.git**
+    - **git fetch**
+    - **git pull origin master**
 
-1. Navigate to your `connected-car` project in your Azure Notebook environment.
+   ![Sample output of running the above commands in the new terminal.](media/05s.png 'Terminal')
+   
+### Task 3: Open the starter notebook
 
-2. Select the **Upload** menu and then choose **From URL**.
+1. From the Jupyter Notebooks interface, navigate to **tech-immersion->lab-files->ai->3**
 
-   ![The Upload menu](media/05.png 'Upload')
+2. Open notebook: **scoring-from-automl-model.ipynb**
 
-3. In the Upload files from URL dialog, copy and paste the following URL into the `File URL`.
-
-   https://github.com/solliancenet/tech-immersion-data-ai/blob/master/lab-files/ai/3/scoring-from-automl-model.ipynb
-
-   Then select **Done** to upload and dismiss the dialog.
-
-   ![The Upload files from Computer dialog](media/06.png 'Upload files from Computer')
-
-4. In the listing, select the Notebook you just uploaded (scoring-from-automl-model.ipynb) to open it.
-
-5. Follow the instructions within the notebook to complete the experience.
+3. Follow the instructions within the notebook to complete the experience.
 
 ## Exercise 3 (Optional): Train and evaluate a model using Azure Machine Learning
 
