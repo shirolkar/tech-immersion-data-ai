@@ -10,3 +10,4 @@ Complete the steps below to prepare the environment for the [AI, Experience 5](.
 - Need pre-created resource group `tech-immersion-onnx-xxxxx` and machine learning workspace `gpu-tech-immersion-aml-xxxxx`
 - The AML cluster is created within the notebook, which requires a GPU enabled cluster (1 node, Standard_NC12)
 - An ACI instance is created within the notebook, which requires cpu_cores=1, and memory_gb=1
+- Users will create a Notebook VM in the workspace of VM size: STANDARD_D3_V2
