@@ -69,7 +69,7 @@ To complete this task, you will use an Notebook VM and Azure Machine Learning.
   
 4. Provide the following values and select **Create**:
 
-    - Name: **ti-nb**
+    - Name: **ti-nbXXXXX** (replace XXXXX in the value with your unique identifier)
     - Virtual machine size: **STANDARD_D3_V2**
 
   ![New Notebook VM Dialog shows values for Name and Virtual machine size.](media/02s.png 'New Notebook VM Dialog')
