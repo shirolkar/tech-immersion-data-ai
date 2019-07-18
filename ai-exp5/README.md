@@ -9,7 +9,8 @@
   - [Exercise 1: Train and deploy a deep learning model](#Exercise-1-Train-and-deploy-a-deep-learning-model)
     - [Task 1: Create the Notebook VM](#Task-1-Create-the-Notebook-VM)
     - [Task 2: Upload the lab notebooks](#Task-2-Upload-the-lab-notebooks)
-    - [Task 3: Open the starter notebook](#Task-3-Open-the-starter-notebook)
+    - [Task 3: Update the Notebook VM environment](#Task-3-Update-the-Notebook-VM-environment)
+    - [Task 4: Open the starter notebook](#Task-4-Open-the-starter-notebook)
   - [Wrap-up](#Wrap-up)
   - [Additional resources and more information](#Additional-resources-and-more-information)
 
@@ -96,8 +97,16 @@ To complete this task, you will use an Notebook VM and Azure Machine Learning.
     - **git pull origin master**
 
    ![Sample output of running the above commands in the new terminal.](media/05s.png 'Terminal')
-   
-### Task 3: Open the starter notebook
+
+### Task 3: Update the Notebook VM environment
+
+1. From the Jupyter Notebooks interface, navigate to **tech-immersion->lab-files->ai->5**
+
+2. Open notebook: **update_evn.ipynb**
+
+3. Run the cell in the notebook to install the required libraries.
+
+### Task 4: Open the starter notebook
 
 1. From the Jupyter Notebooks interface, navigate to **tech-immersion->lab-files->ai->5**
 
