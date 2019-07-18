@@ -6,7 +6,10 @@
   - [AI, Experience 5 - Making deep learning portable with ONNX](#AI-Experience-5---Making-deep-learning-portable-with-ONNX)
   - [Technology overview](#Technology-overview)
   - [Scenario overview](#Scenario-overview)
-  - [Task 1: Train and deploy a deep learning model](#Task-1-Train-and-deploy-a-deep-learning-model)
+  - [Exercise 1: Train and deploy a deep learning model](#Exercise-1-Train-and-deploy-a-deep-learning-model)
+    - [Task 1: Create the Notebook VM](#Task-1-Create-the-Notebook-VM)
+    - [Task 2: Upload the lab notebooks](#Task-2-Upload-the-lab-notebooks)
+    - [Task 3: Open the starter notebook](#Task-3-Open-the-starter-notebook)
   - [Wrap-up](#Wrap-up)
   - [Additional resources and more information](#Additional-resources-and-more-information)
 
@@ -50,43 +53,57 @@ There is also an ecosystem of tools for visualizing and accelerating ONNX models
 
 In this experience you will learn how Contoso Auto can leverage Deep Learning technologies to scan through their vehicle specification documents to find compliance issues with new regulations. Then they will deploy this model, standardizing operationalization with ONNX. You will see how this simplifies inference runtime code, enabling pluggability of different models and targeting a broad range of runtime environments from Linux based web services to Windows/.NET based apps.
 
-## Task 1: Train and deploy a deep learning model
+## Exercise 1: Train and deploy a deep learning model
 
-In this task, you will train a deep learning model to classify the descriptions of car components provided by technicians as compliant or non-compliant, convert it to ONNX, and deploy it as a web service. To accomplish this, you will use an Azure Notebook and Azure Machine Learning.
+In this task, you will train a deep learning model to classify the descriptions of car components provided by technicians as compliant or non-compliant, convert it to ONNX, and deploy it as a web service. To accomplish this, you will use an Notebook VMs and Azure Machine Learning.
 
-1. To start, open a new web browser window and navigate to <https://notebooks.azure.com>.
+### Task 1: Create the Notebook VM
 
-2. Select **Sign In** and then use your Microsoft Account to complete the sign in process.
+To complete this task, you will use an Notebook VM and Azure Machine Learning.
 
-   ![The Sign In button](media/01.png 'Sign In')
+1. Navigate to your Azure Machine Learning workspace in the Azure Portal.
+2. Select `Notebook VMs` in the left navigation bar.
+3. Select **+ New**.
 
-3. Dismiss the dialog to create the user ID (you will not need this). Within the Microsoft Azure Notebooks portal, select **My Projects** from the menu at the top.
+  ![Select the button New in the Notebook VMs section.](media/01s.png '+ New')
+  
+4. Provide the following values and select **Create**:
 
-   ![The My Projects button](media/02.png 'My Projects')
+    - Name: **ti-nb**
+    - Virtual machine size: **STANDARD_D3_V2**
 
-4. Then select **New Project**.
+  ![New Notebook VM Dialog shows values for Name and Virtual machine size.](media/02s.png 'New Notebook VM Dialog')
+  
+5. Wait for the Notebook VM to be in **Running** status. This can take around 3-5 minutes.
 
-   ![The New Project button](media/03.png 'New Project')
+### Task 2: Upload the lab notebooks
 
-5. On the Create New Project dialog, provide a Project Name (this should be a user friendly description) and Project ID (this will form a part of the URL used to access this project in the browser) and uncheck Public. Select **Create**.
+1. Launch the **Jupyter Notebooks** interface by selecting as shown.
 
-   ![The Create New Project dialog](media/04.png 'Create New Project')
+  ![The image highlights the area to select to launch the Jupyter notebooks interface.](media/03s.png 'Launch Jupyter Notebooks')
 
-6. Select the **Upload** menu and then choose **From URL**.
+2. From Jupyter Notebooks interface select **New, Terminal**
 
-   ![The Upload menu](media/05.png 'Upload')
+  ![The image shows how to launch a new terminal from Jupyter Notebooks interface.](media/04s.png 'New Terminal')
 
-7. In the Upload files from URL dialog, copy and paste the following URL into the `File URL`.
+3. In the new terminal run the following command in order:
 
-   https://github.com/solliancenet/tech-immersion-data-ai/blob/master/lab-files/ai/5/deep-learning.ipynb
+    - **mkdir tech-immersion**
+    - **cd tech-immersion**
+    - **git init**
+    - **git remote add origin https://github.com/solliancenet/tech-immersion-data-ai.git**
+    - **git fetch**
+    - **git pull origin master**
 
-   Then select **Done** to upload and dismiss the dialog.
+   ![Sample output of running the above commands in the new terminal.](media/05s.png 'Terminal')
+   
+### Task 3: Open the starter notebook
 
-   ![The Upload files from Computer dialog](media/06.png 'Upload files from Computer')
+1. From the Jupyter Notebooks interface, navigate to **tech-immersion->lab-files->ai->5**
 
-8. In the listing, select the Notebook you just uploaded (deep-learning.ipynb) to open it.
+2. Open notebook: **deep-learning.ipynb**
 
-9. Follow the instructions within the notebook to complete the experience.
+3. Follow the instructions within the notebook to complete the experience.
 
 ## Wrap-up
 
