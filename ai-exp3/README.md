@@ -11,10 +11,11 @@
     - [Task 2: Review the experiment run results](#Task-2-Review-the-experiment-run-results)
     - [Task 3: Register the Best Model](#Task-3-Register-the-Best-Model)
   - [Exercise 2: Understanding the automated ML generated model using model explainability](#Exercise-2-Understanding-the-automated-ML-generated-model-using-model-explainability)
-    - [Task 1: Create the Azure Notebooks project](#Task-1-Create-the-Azure-Notebooks-project)
-    - [Task 2: Upload the starter notebook](#Task-2-Upload-the-starter-notebook)
+    - [Task 1: Create the Notebook VM](#Task-1-Create-the-Notebook-VM)
+    - [Task 2: Upload the lab notebooks](#Task-2-Upload-the-lab-notebooks)
+    - [Task 3: Open the starter notebook](#Task-3-Open-the-starter-notebook)
   - [Exercise 3 (Optional): Train and evaluate a model using Azure Machine Learning](#Exercise-3-Optional-Train-and-evaluate-a-model-using-Azure-Machine-Learning)
-    - [Task 1: Upload and open the starter notebook](#Task-1-Upload-and-open-the-starter-notebook)
+    - [Task 1: Open the starter notebook](#Task-1-Open-the-starter-notebook)
   - [Wrap-up](#Wrap-up)
   - [Additional resources and more information](#Additional-resources-and-more-information)
 
@@ -125,7 +126,7 @@ To complete this task, you will use an Notebook VM and Azure Machine Learning.
   
 5. Wait for the Notebook VM to be in **Running** status. This can take around 3-5 minutes.
 
-### Task 2: Upload the notebooks
+### Task 2: Upload the lab notebooks
 
 1. Launch the **Jupyter Notebooks** interface by selecting as shown.
 
