@@ -165,7 +165,9 @@ In this exercise, you will use compute resources provided by Azure Machine Learn
 
 2. Open notebook: **predict-battery-life-with-AML.ipynb**
 
-3. Follow the instructions within the notebook to complete the experience.
+3. Follow the instructions within the notebook to complete the experience. 
+
+*Note: It is important that you complete Exercise 2 before working on the optional Exercise 3 as the Exercise 2 notebook will install some libraries that are also required for Exercise 3*
 
 ## Wrap-up
 
