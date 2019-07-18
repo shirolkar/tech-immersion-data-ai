@@ -104,7 +104,7 @@ To complete this task, you will use an Notebook VM and Azure Machine Learning.
 
 2. Open notebook: **update_evn.ipynb**
 
-3. Run the cell in the notebook to install the required libraries.
+3. Run the cells in the notebook to install the required libraries.
 
 ### Task 4: Open the starter notebook
 
