@@ -156,27 +156,15 @@ To complete this task, you will use an Notebook VM and Azure Machine Learning.
 
 ## Exercise 3 (Optional): Train and evaluate a model using Azure Machine Learning
 
-### Task 1: Upload and open the starter notebook
+### Task 1: Open the starter notebook
 
-In this exercise, you will use compute resources provided by Azure Machine Learning to remotely train a set of models using Automated Machine Learning, evaluate performance of each model and pick the best performing model to deploy as a web service. You will perform this lab using Azure Notebooks. The model you train here is created using automated machine learning just as you did in exercise 1, except instead of using the visual interface in the Azure Portal you setup the model training using Python.
+In this exercise, you will use compute resources provided by Azure Machine Learning to remotely train a set of models using Automated Machine Learning, evaluate performance of each model and pick the best performing model to deploy as a web service. You will perform this lab using Notebook VMs. The model you train here is created using automated machine learning just as you did in exercise 1, except instead of using the visual interface in the Azure Portal you setup the model training using Python.
 
-1. Navigate to your `connected-car` project in your Azure Notebook environment.
+1. From the Jupyter Notebooks interface, navigate to **tech-immersion->lab-files->ai->3**
 
-2. Select the **Upload** menu and then choose **From URL**.
+2. Open notebook: **predict-battery-life-with-AML.ipynb**
 
-   ![The Upload menu](media/05.png 'Upload')
-
-3. In the Upload files from URL dialog, copy and paste the following URL into the `File URL`.
-
-   https://github.com/solliancenet/tech-immersion-data-ai/blob/master/lab-files/ai/3/predict-battery-life-with-AML.ipynb
-
-   Then select **Done** to upload and dismiss the dialog.
-
-   ![The Upload files from Computer dialog](media/06.png 'Upload files from Computer')
-
-4. In the listing, select the Notebook you just uploaded (predict-battery-life-with-AML.ipynb) to open it.
-
-5. Follow the instructions within the notebook to complete the experience.
+3. Follow the instructions within the notebook to complete the experience.
 
 ## Wrap-up
 
